@@ -7,37 +7,43 @@ DARKBLUE #1D6A87
 #402722
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
 body{
 	background-image: url("resources/lightWoodBackground.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	font-family: "Montserrat Alternates", sans-serif;
+	font-weight: 500;
+	font-size: 1.2rem;
 }
 
-#menu
-{
+#menu{
 	top: 0;
 	left: 0;
 	display: flex;
 	place-content: center;
 	white-space: nowrap;
-	padding-bottom: 0.5%;
-	padding-top: .5%;
+	padding-bottom: .7%;
+	padding-top: .7%;
 	position: fixed;
 	width: 100%;
 	height: 2.25rem;
 	background-image: url("resources/darkWood.jpg");
-	box-shadow: -1px 10px 10px 5px #251919;
+	box-shadow: 0 0.625rem 0.625rem #251919;
 }
 
 #menu .menuitem{
 	padding-top: 0.25%;
 	padding-right: 1.5%;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 1.3rem;
-	font-weight: 700;
-	font-style: italic;
-	font-variant: normal;
+}
+
+#menu a{
+
+	font-size: 1.7rem;
+	font-family: Playball;
+	text-decoration: none;
 	text-transform: capitalize;
 }
 
@@ -71,18 +77,12 @@ body{
 	width: 100%;
 }
 
-#about{
-	margin-top: 5rem;
-}
-
 section h1{
 	text-align: center;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 1.5rem;
+	font-family: Playball;
+	font-size: 2rem;
 	color: #1D6A87;
-	font-weight: 900;
-	font-style: italic;
-	font-variant: normal;
+	text-decoration: underline;
 	text-transform: capitalize;
 	position: relative;
 	z-index: -1;
@@ -99,12 +99,25 @@ section h1::before, h1::after{
 	height: 100%;
 	max-height: 0.625rem;
 	background-image: url("resources/darkWood.jpg");
-	box-shadow: 0px 0px 5px 2px #251919;
+	border-radius: 0.2rem / 0.2rem;
+	box-shadow: 0 0.25rem 0.4rem rgba(37, 25, 25, 0.7);
 }
 
 section h1::before{
 
 	right: 0;
+}
+
+#about{
+	margin-top: 5rem;
+}
+
+#about p{
+
+	padding: 0.25em;
+	background: #D5B688;
+	border-radius: 0.625em / 0.625em;
+	box-shadow: 0 0.25em 0.625em rgb(0, 0, 0, 0.5);
 }
 
 #photos div{
@@ -116,6 +129,7 @@ section h1::before{
 #photos img{
 
 	border-radius: 11%;
+	box-shadow: 0.2rem 0.2rem 0.2rem rgb(0 0 0 / 50%);
 }
 
 #photos img + img{
@@ -129,6 +143,8 @@ section h1::before{
 }
 
 #playlist iframe{
+	min-width: 480px;
+	min-height: 270px;
 	width: 70rem;
 	height: 40rem;
 
@@ -141,4 +157,72 @@ section h1::before{
 #qrcoder{
 
 	text-align: center;
+}
+
+#spa ol{
+
+	padding: 0.25rem 1.5rem;
+	background: #D5B688;
+	border-radius: 0.625em / 0.625em;
+	box-shadow: 0 0.25em 0.625em rgb(0, 0, 0, 0.5);
+}
+
+#spa table {
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9em;
+    min-width: 25rem;
+	border-radius: 0.5em 0.5em 0 0;
+    overflow: hidden;
+    box-shadow: 0 0.4em 20px -0.2em rgb(0 0 0 / 20%)
+}
+
+#spa table thead tr {
+    background-color: #8E6137;
+    color: #D5B688;
+    font-weight: bold;
+    text-align: left;
+}
+
+#spa table :is(tr,td) {
+    padding: 0.5em 0.7em;
+}
+
+#spa table tbody tr {
+    border-bottom: 1px solid #a58669;
+}
+
+#spa table tbody tr:nth-of-type(even) {
+    background-color: #d8bf9b;
+}
+
+#spa table tbody tr:last-of-type {
+    border-bottom: 2px solid #8E6137;
+}
+
+#contact p{
+
+	padding: 0.25em;
+	background: #D5B688;
+	border-radius: 0.625em / 0.625em;
+	box-shadow: 0 0.25em 0.625em rgb(0, 0, 0, 0.5);
+}
+
+#contact :is(input[type=text], textarea) {
+    margin: 0.5em;
+    border: 2px solid #a58669;
+    border-radius: 0.25em;
+    outline: none;
+    padding: 0.25em;
+    box-sizing: border-box;
+    transition: .25s;
+}
+
+#contact input[type=text]{
+	width: 93%;
+}
+
+#contact :is(input[type=text], textarea):focus {
+    border-color: #8E6137;
+    box-shadow: 0 0 20px -0.2em rgb(0 0 0 / 20%);
 }
