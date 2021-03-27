@@ -108,6 +108,11 @@ section h1::before{
 	right: 0;
 }
 
+#_about, #_photos, #_playlist, #_like, #_qrcoder, #_spa, #_contact{
+	position: absolute;
+	top: -5rem;
+}
+
 #about{
 	margin-top: 5rem;
 }
