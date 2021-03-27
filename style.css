@@ -223,6 +223,7 @@ section h1::before{
     box-sizing: border-box;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: medium;
+	resize: none;
     transition: .25s;
 }
 
