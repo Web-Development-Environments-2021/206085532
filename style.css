@@ -88,7 +88,7 @@ section h1{
 	z-index: -1;
 }
 
-section h1::before, h1::after{
+section h1::before, section h1::after{
 
 	content: '';
 	display: block;
